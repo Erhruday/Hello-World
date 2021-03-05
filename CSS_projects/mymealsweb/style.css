@@ -1,0 +1,255 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: turquoise;
+}
+
+
+/* Navigation Bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+    
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+/* Navigation Bar:logo and image */
+
+#logo{
+    margin: 3px 3px;
+
+}
+
+#logo img{
+    height: 67px;
+    margin: 13px 30px;
+}
+
+/* Navigatio bar list styling */
+
+#navbar ul{
+    display: flex;
+}
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 35px;
+    font-family: 'Long Cang', cursive;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: rgb(34, 33, 33);
+    background-color: rgba(43, 250, 188, 0.473);
+    border-radius: 20px;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:6px 150px;
+    height: 448px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('img\ \(2\).jpg') no-repeat center center/cover;
+    height: 570px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.8;
+}
+
+
+/* heading */
+
+#home h1{
+    color: rgba(211, 107, 224, 0.932);
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    font-size: 2.5rem;
+
+}
+
+#home p{
+    color: rgba(133, 149, 241, 0.938);
+    font-size: 1.5rem;
+    font-family: 'EB Garamond', serif;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 3px solid #37e37482;
+    background-image: linear-gradient(90deg, rgba(4,10,38,0.9750247581776242) 0%, rgba(227,12,229,1) 91%);;
+    color:rgb(175 144 235);
+    margin: 28px;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    
+}
+
+/* Serices Section */
+
+
+#services{
+    margin: 34px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+
+    
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 21px;
+    margin: 2px 22px;
+    border-radius: 40px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    box-shadow: 20px 27px 37px 4px rgba(0,0,0,0.59);
+    
+   
+}
+
+#services .box:hover{ 
+    border-radius: 20px 55px 20px 55px;
+    background: #0fabc0;
+    
+}
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+.h-primary{
+    font-size: 3.5rem;
+    padding: 15px;
+    text-align: center;
+    
+  
+}
+
+.h-secondary{
+    font-size: 2.5rem;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Client Section */
+
+ #client-section{
+     height: 444px;
+     height: 50%;
+     width: 100%;
+     /* opacity: 0.8; */
+     }
+
+     #client-section::before{
+         content: "";
+         position: absolute;
+         background:url('img(4).jpg') no-repeat center center/cover;
+         height: 216px;
+         width: 100%;
+         z-index: -1;
+         opacity: 0.6;
+        
+        }
+
+ #clients{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.client-items{
+     padding: 20px;
+ }
+
+ #clients img{
+     height: 80px;
+ }
+
+ /* Contact Section */
+
+ #contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('contact.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    background: rgb(255, 215, 215);
+    width: 100%;
+    padding: 0.5rem;
+    border-bottom: 2px solid blue;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 50%;
+}
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+}
+/* footer */
+footer{
+    background: rgba(0, 0, 0, 0.753);
+    color: whitesmoke;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.social img{
+    height: 20px;
+    padding: 10px;
+
+}

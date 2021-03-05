@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(203, 214, 223);
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+
+}
+
+h1{
+    letter-spacing: 6px;
+    font-weight: 600;
+    margin: 40px ;
+    color: rgb(73, 66, 66);
+}
+
+.container{
+    display: flex;
+}
+
+.bttn{
+    background:  rgb(203, 214, 223);
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 80px;
+    cursor: pointer;
+  
+    margin: 0 20px;
+    border-radius: 19px;
+background: #cbd6df;
+box-shadow:  8px 8px 12px #888f95, 
+             -8px -8px 12px #ffffff;
+}
+
+.bttn i{
+    text-align: center;
+    font-size: 40px;
+    color: rgba(4, 32, 54, 0.904);
+    opacity: 0.9px;
+}
+
+
+.bttn:hover i{
+    transform: scale(0.95);
+}
+
+.fotter{
+    margin: 60px;
+}
