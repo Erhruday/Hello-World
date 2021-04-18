@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+    .btn{
+      
+        color: rgb(200, 203, 207);
+        font-weight: 700;
+        font-size: 25px;
+        height: 60px;
+        width: 60px;
+        border: 2px solid rgb(17, 17, 255);
+        border-radius: 10px;
+        margin: 3px;
+        background: rgb(2,0,36);
+        background: linear-gradient(149deg, rgba(2,0,36,1) 0%, rgba(15,86,47,1) 35%, rgba(0,212,255,1) 100%);
+    }
+
+    table td .btn:hover{
+        background: rgb(238,174,202);
+        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        color: rgb(255, 2, 120);
+    }
+
+#textfield{
+    height: 60px;
+    width: 260px;
+    border: 2px solid rgb(40, 255, 237);
+    border-radius: 20px ;
+    margin: 5px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 700;
+    background: rgb(222,188,231);
+    background: linear-gradient(47deg, rgba(222,188,231,1) 0%, rgba(146,146,252,1) 100%);
+}
+.table{
+    border: 5px solid rgb(124, 122, 122);
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 40px;
+
+}
+</style>
+<body>
+    <form name="calc">
+        <table class="table" align="center" bgcolor="black" >
+        <tr>
+        <td colspan=4 align="center">
+        <input type="text" name="display" id="textfield" >
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <input type="button" class="btn" name="B" value=" 7 "  onClick="digit(7)">
+        </td>
+        <td>
+        <input type="button" class="btn" name="B" value=" 8 " onClick="digit(8)">
+        </td>
+        <td>
+        <input type="button" class="btn" name="B" value=" 9 " onClick="digit(9)">
+        </td>
+        <td>
+        <input type="button" class="btn" name="B" value=" + " onClick="operation(1)">
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <input type="button" class="btn" name="B" value=" 4 " onClick="digit(4)">
+        </td>
+        <td>
+        <input type="button" class="btn" name="B" value=" 5 " onClick="digit(5)">
+        </td>
+        <td>
+        <input type="button" class="btn" name="B" value=" 6 " onClick="digit(6)">
+        </td>
+        <td>
+        <input type="button" class="btn" name="B" value=" - " onClick="operation(2)">
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <input type="button" class="btn" name="B" value=" 1 " onClick="digit(1)">
+        </td>
+        <td>
+        <input type="button" class="btn" name="B" value=" 2 " onClick="digit(2)">
+        </td>
+        <td>
+        <input type="button" class="btn" name="B" value=" 3 " onClick="digit(3)">
+        </td>
+        <td>
+        <input type="button" class="btn" name="B" value=" * " onClick="operation(3)">
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <input type="button" class="btn" name="B" value=" 0 " onClick="digit(0)">
+        </td>
+        <td>
+        <input type="button" class="btn" name="B" value=" . " onClick="digit(10)">
+        </td>
+        <td>
+        <input type="button" class="btn" name="B" value=" = " onClick="operation(5)">
+        </td>
+        <td>
+        <input type="button" class="btn" name="B" value=" / " onClick="operation(4)">
+        </td>
+        </tr>
+        </table>
+        
+        </form>
+
+        <script>
+            var i,j,op1,op2,op,f;
+            function digit(i){
+                switch(i)
+            {
+            case 1:
+            document.calc.display.value=(document.calc.display.value)+"1";
+            break;
+            case 2:
+            document.calc.display.value=(document.calc.display.value)+"2";
+            break;
+            case 3:
+            document.calc.display.value=(document.calc.display.value)+"3";
+            break;
+            case 4:
+            document.calc.display.value=(document.calc.display.value)+"4";
+            break;
+            case 5:
+            document.calc.display.value=(document.calc.display.value)+"5";
+            break;
+            case 6:
+            document.calc.display.value=(document.calc.display.value)+"6";
+            break;
+            case 7:
+            document.calc.display.value=(document.calc.display.value)+"7";
+            break;
+            case 8:
+            document.calc.display.value=(document.calc.display.value)+"8";
+            break;
+            case 9:
+            document.calc.display.value=(document.calc.display.value)+"9";
+            break;
+            case 0:
+            document.calc.display.value=(document.calc.display.value)+"0";
+            break;
+            case 10:
+            document.calc.display.value=(document.calc.display.value)+".";
+            break;
+            }
+            }
+            function operation(j){
+            if(j==1)
+            {
+            op1=parseFloat(document.calc.display.value);
+            document.calc.display.value="";
+            op=1;
+            }
+            if(j==2)
+            {
+            op1=parseFloat(document.calc.display.value);
+            document.calc.display.value="";
+            op=2;
+            }
+            if(j==3)
+            {
+            op1=parseFloat(document.calc.display.value);
+            document.calc.display.value="";
+            op=3;
+            }
+            if(j==4)
+            {
+            op1=parseFloat(document.calc.display.value);
+            document.calc.display.value="";
+            op=4;
+            }
+            if(j==5)
+            {
+            op2=parseFloat(document.calc.display.value);
+            if(op==1)
+            {
+            f=op1+op2;
+            document.calc.display.value=f;
+            }
+            else if(op==2)
+            {
+            f=op1-op2;
+            document.calc.display.value=f;
+            }
+            else if(op==3)
+            {
+            f=op1*op2;
+            document.calc.display.value=f;
+            }
+            else if(op==4)
+            {
+            f=op1/op2;
+            document.calc.display.value=f;
+            }
+            }
+            }
+            </script>
+
+    
+</body>
+</html>
