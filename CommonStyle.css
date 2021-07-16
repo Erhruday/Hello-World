@@ -1,0 +1,91 @@
+/* * {
+    background-color: rgba(242, 243, 243, 0.973);
+} */
+h1 {
+    color: slateblue;
+}
+.main_section {
+    background-color: rgb(255, 255, 255) !important;
+    /* border: 2px solid rebeccapurple; */
+    padding: 10px;
+    height: 70%;
+    border-radius: 30px;
+    box-shadow: 0px -1px 0px 9px rgba(177, 216, 252, 0.75);
+    -webkit-box-shadow: 0px -1px 0px 9px rgba(193, 232, 255, 0.75);
+    -moz-box-shadow: 0px -1px 0px 9px rgba(190, 184, 184, 0.75);
+}
+.paper_padding {
+    /* padding: 5px; */
+    padding-left: 20px;
+    padding-top: 6px;
+}
+.icon_style {
+    margin-right: 5px;
+    color: cornsilk;
+    background-color: rgb(37, 95, 255);
+    border-radius: 5px;
+}
+.tiles_icon1 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(19, 248, 76);
+    font-size: 120px !important;
+    border-radius: 15px;
+}
+.tiles_icon2 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(48, 95, 250);
+    font-size: 120px !important;
+    border-radius: 15px;
+}
+.tiles_icon3 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(1, 212, 240);
+    font-size: 120px !important;
+    border-radius: 15px;
+}
+.div_icon1 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(16, 107, 192);
+    font-size: 120px !important;
+    border-radius: 15px;
+}
+
+.right_section {
+    background-color: rgb(240, 240, 240) !important;
+    padding: 10px;
+}
+.star_style {
+    color: rgb(255, 198, 43);
+    font-size: 20px !important;
+}
+.textfield_style {
+    border: none;
+    width: 100%;
+    height: 45px;
+    border: 2px solid rgba(155, 153, 153, 0.712);
+    border-radius: 20px;
+    margin-top: 20px !important;
+    margin-bottom: 10px;
+    background-color: rgb(250, 254, 255);
+    box-shadow: 8px 17px 14px -9px rgba(0, 0, 0, 0.66);
+    -webkit-box-shadow: 8px 17px 14px -9px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 8px 17px 14px -9px rgba(0, 0, 0, 0.66);
+}
+.tiles_style {
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255) !important;
+    padding: 10px;
+    border-radius: 20px !important;
+    transition: 0.4s;
+}
+.tiles_style:hover {
+    margin-top: 10px;
+    width: 1020px;
+    transition: 0.5s;
+    /* background-color: rgb(243, 243, 243) !important; */
+    padding: 10px;
+    border-radius: 20px !important;
+    box-shadow: 11px 11px 6px -6px rgba(0, 0, 0, 0.58);
+    -webkit-box-shadow: 11px 11px 6px -6px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 11px 11px 6px -6px rgba(0, 0, 0, 0.58);
+}
