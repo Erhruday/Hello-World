@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* background-color: rgb(185, 34, 255); */
+    background: #536976;
+}
+.heart {
+    position: fixed;
+    top: -1vh;
+    font-size: 2rem;
+    transform: translateY(0);
+    animation: fall 3s linear;
+}
+.heart2 {
+    position: fixed;
+    top: -1vh;
+    font-size: 5rem;
+    transform: translateY(0);
+    animation: fall 3s linear;
+}
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
+h1 {
+    color: whitesmoke;
+}
