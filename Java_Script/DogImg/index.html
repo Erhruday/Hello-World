@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>random_dog_Img</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h4>CLICK TO SEE RANDOM DOG IMAGE</h4>
+        <div id="container">
+            <img
+                id="image"
+                alt="dogImg"
+                src="https://images.unsplash.com/photo-1598134706627-d7ee8c927785?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
+            />
+            <button id="button" onclick="getRandom_dogImg()">random</button>
+        </div>
+        <script>
+            function getRandom_dogImg() {
+                let url = 'https://dog.ceo/api/breeds/image/random';
+                fetch(url)
+                    .then(function (res) {
+                        return res.json();
+                    })
+                    .then(function (data) {
+                        display_img(data.message);
+                    })
+                    .catch(function (error) {
+                        console.log('Error' + error);
+                    });
+            }
+
+            function display_img(image_url) {
+                document.getElementById('image').src = image_url;
+            }
+        </script>
+    </body>
+</html>
